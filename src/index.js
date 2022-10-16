@@ -26,10 +26,8 @@ function outputClear(evt) {
         countryListRef.innerHTML = '';
       } else if (data.length >= 2 && data.length <= 10) {
         const countriesList = data.map(countryList).join('');
-        countryListRef.innerHTML = markupList;
+        countryListRef.innerHTML = countriesList;
         countryInfoRef.innerHTML = '';
-        console.log(countriesList);
-        console.log(markupList);
       } else {
         Notify.info(
           'Too many matches found. Please enter a more specific name.'
