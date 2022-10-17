@@ -41,12 +41,8 @@ function outputClear(evt) {
 
 function countryInfo([{ population, flags, capital, languages, name }]) {
   return `<div class="title__wraper">
-    <img class="flag" src="${
-      flags.svg
-    }" alt="flag" width= "50px" <p class="card__item"><span> ${
-    name.official
-  }</span></p>
-    
+    <img class="flag" src="${flags.svg}" alt="flag" width= "50px"> 
+    <p  class = "name"><span> ${name.official} </span></p>
     <p class="card__item">Capital: <span>${capital}</span></p>
     <p class="card__item">Population: <span>${
       population / 1000000
@@ -58,7 +54,7 @@ function countryInfo([{ population, flags, capital, languages, name }]) {
 }
 
 function countryList({ flags, name }) {
-  return ` <li><img class="flag" src="${flags.svg}" alt="flag" width= "50px" <p class="card__item"><span> ${name.official}</span></p></li>
+  return ` <li><img class="flag" src="${flags.svg}" alt="flag" width= "50px" <p class="card__item"><span class_name> ${name.official}</span></p></li>
     `;
 }
 
