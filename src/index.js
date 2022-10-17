@@ -18,8 +18,6 @@ function outputClear(evt) {
   }
   fetchCountry(country)
     .then(data => {
-      console.log(data);
-
       if (data.length === 1) {
         const markupInfo = countryInfo(data);
         countryInfoRef.innerHTML = markupInfo;
